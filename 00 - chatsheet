@@ -1,5 +1,8 @@
 dirb - find fidden URLs
 dirb http://target.com /usr/share/wordlists/dirb/common.txt
+ssh user@IP
+
+su user2 - user more similar to actual user
 
 Monitoring:
 - Shodan - monitors what has public conection
@@ -11,6 +14,8 @@ LINUX
 - echo "..." - returns text we provide
 - whoami - returns user we're logged in as
 - ls - listings folders
+- ls -a - listing all folders
+- ls -help - help with ls
 - cd - change directory
 - cat - content of file
 - pwd - shows full path to directory
@@ -21,3 +26,24 @@ LINUX
 - com1 && com2 - command2 will be done after com1
 - echo hey > welcome - message hey in file welcome
 - echo hello >> welcome - adds hello at the end
+
+FILES:
+- touch - create file
+- mkdir - create folder
+- cp - copy file/folder
+- mv - move file/folder
+- rm - remove file/folder
+- file - type of file
+
+RIGHTS:
+- ls -lh - permissions, owner
+  Owner/group/others - 3/3/3
+- read 4
+- write 2
+- execute 1
+
+DIRECTORIES:
+- /etc - store system files
+- /var - store data frequently accessed
+- /root - home for root system user 
+- /tmp - store data needed only once/twice
