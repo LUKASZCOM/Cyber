@@ -1,7 +1,23 @@
 dirb - find fidden URLs
-Sites to monitor:
+dirb http://target.com /usr/share/wordlists/dirb/common.txt
+
+Monitoring:
 - Shodan - monitors what has public conection
 - VirusTotal - checks files/URLs/domains for being flagged
 - CVE - identifies weak parts (each identified breach)
+
 LINUX
-man <command> - documentation
+- man <command> - documentation
+- echo "..." - returns text we provide
+- whoami - returns user we're logged in as
+- ls - listings folders
+- cd - change directory
+- cat - content of file
+- pwd - shows full path to directory
+- find -name <file/*> - finds path to file
+- grep "81.143.211.90" access.log - searchs for that in acces log file
+- grep -R "PRETTY_NAME" /etc/ - searches for that in whole directory
+- & - makes sth in the background
+- com1 && com2 - command2 will be done after com1
+- echo hey > welcome - message hey in file welcome
+- echo hello >> welcome - adds hello at the end
