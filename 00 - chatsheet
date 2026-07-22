@@ -27,6 +27,7 @@ LINUX
 - echo hey > welcome - message hey in file welcome
 - echo hello >> welcome - adds hello at the end
 
+
 FILES:
 - touch - create file
 - mkdir - create folder
@@ -47,3 +48,9 @@ DIRECTORIES:
 - /var - store data frequently accessed
 - /root - home for root system user 
 - /tmp - store data needed only once/twice
+
+EDITING:
+- nano <file> - editing a file
+- wget <http.adress> - downloading file
+- scp - transfer from local host - scp important.txt (what we import) ubuntu@192.168.1.30:/home/ubuntu/transferred.txt (as what we import)
+
