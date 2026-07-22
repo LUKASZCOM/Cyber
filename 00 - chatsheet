@@ -1,1 +1,7 @@
-
+dirb - find fidden URLs
+Sites to monitor:
+- Shodan - monitors what has public conection
+- VirusTotal - checks files/URLs/domains for being flagged
+- CVE - identifies weak parts (each identified breach)
+LINUX
+man <command> - documentation
