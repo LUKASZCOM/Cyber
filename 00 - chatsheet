@@ -65,5 +65,12 @@ PROCESSES:
 - sigterm - kill the process, but allow to do a cleanup
 - sigkill - kill the process, don't do cleanup
 - sigstop - stop the process
+- systemctl1 [option] [service] - process ex. starts on the booth  - start/stop/enable/disable/status
+- echo "Hi THM" & - returns ID of the process
+- fg - foregrounds a process
 
+PROCESSES AUTOMATION:
+- crontabs - automates processes
+- MIN/HOUR/DOM/MON/DOW/CMD - 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+- crontab -e - edit crons
 
