@@ -74,3 +74,18 @@ PROCESSES AUTOMATION:
 - MIN/HOUR/DOM/MON/DOW/CMD - 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
 - crontab -e - edit crons
 
+PACKAGES:
+- add-apt-repository - adds another provider repo
+- apt - package management
+- dpkg - software installer
+- apt update - refresh packages list
+- apt install <name> - install program
+- apt remove <name> - delete program
+- add-apt-repository --remove ppa:PPA_Name/ppa - delete repo
+- /etc/apt/sources.list.d/ - folder with repos
+
+LOGS:
+- access.log - visitors
+- error.log - server errors
+- access.log.1 - last rotated log
+
