@@ -54,3 +54,6 @@ EDITING:
 - wget <http.adress> - downloading file
 - scp - transfer from local host - scp important.txt (what we import) ubuntu@192.168.1.30:/home/ubuntu/transferred.txt (as what we import)
 
+One terminal - python3 -m  http.server
+Second terminal - tryhackme@mymachine:~# wget http://MACHINE_IP:8000/myfile
+
