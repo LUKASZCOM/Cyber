@@ -23,3 +23,12 @@ CMD commands:
 - net - manage network resources
 - net help <user> - help about user
 - regedit - registry editor - configuration system for users
+
+
+Delegation:
+PS C:\Users\phillip> Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
+PS C:\Users\phillip> Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
+
+Separate workstations and servers
+Group policy maganement - OUs policies
+PS C:\> gpupdate /force
