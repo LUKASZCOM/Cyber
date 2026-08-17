@@ -1,0 +1,42 @@
+CMD commands:
+- set - check the path
+- ver - system version
+- systeminfo - info about system
+- cls - clears page
+- ipconfig - network information
+- ipconfig /all - more info about network
+- ping <target_name> - checks if we can access a network server
+- tracert <target_name> - tracks the network route
+- nslookup <target_name> - shows the IP adress
+- netstat -abon - current connections and listening ports
+- cd - current directory
+- dir - child directories
+- dir /a - also hidden directories
+- dir /s - files in current directory
+- tree - tree representation of files
+- cd <directory> - changes directory
+- cd .. - goes up one level
+- mkdir - create directory
+- rmdir - delete directory
+- type - view file
+- more - view bigger file
+- copy <file> <new_file> - copies a file
+- move <file> <location> - moves a file
+- del <file> - deletes a file
+- copy *.md - copies all files that are md
+- tasklist - running processes
+- tasklist /FI "imagename eq sshd.exe" - all processes related to sshd.exe
+- taskkill /PID <task_id> - kills the process
+- chkdsk - chcecks the file system for errors
+- driverquery - list of all installed drivers
+- sfc /scannow - scans system files for corruption
+
+PowerShell commands:
+- Get-Command - lists available commands
+- Get-Command -CommandType "Function" - lists all commands that are functions
+- Get-Help <cmdlet> - help about query
+- Get-Help <cmdlet> -examples - common examples
+- Get-Alias - list of available aliases
+- Find-Module -Name "PowerShell" / -Name "Remove*"- searches for this module from online repositories
+- Install-Module -Name "PowerShellGet" - we found a module and we want to install it now
+
