@@ -39,4 +39,35 @@ PowerShell commands:
 - Get-Alias - list of available aliases
 - Find-Module -Name "PowerShell" / -Name "Remove*"- searches for this module from online repositories
 - Install-Module -Name "PowerShellGet" - we found a module and we want to install it now
+- Get-ChildItem - lists all subfolders
+- -Path - specifies the Path
+- Set-Location - changes directory
+- New-Item -Path <path> -ItemType <type> - creates sth new
+- Remove-Item -Path <path> - deletes an item
+- Copy-Item -Path <path> -Destination <dest> - copies an item
+- Move-Item -Path <path> -Destination <dest> - moves an item
+- Get-Content -Path <path> - shows whats in the file
+- | - piping two commands ex. Get-ChildItem | Sort-Object Length
+- Sort-Object <crit> - sorts objects
+- Get-ChildItem | Where-Object -Property "Extension" -eq ".txt" - specified condition
+  - ne - not equal
+  - gt - greater than
+  - ge - greater or equal to
+  - lt - less than
+  - le - less or equal to
+  - like - has sth in it ex. "ship*"
+- Get-ChildItem | Select-Object Name,Length / -First 1 - shows things we only need
+- Select-String -Path ".\captain-hat.txt" -Pattern "hat" - searches for hat in a file
+- Get-ComputerInfo - computer info
+- Get-LocalUser - all accounts
+- Get-NetIPConfiguration - info about networks
+- Get-Process - list of all working processes
+- Get-Service - list of services
+- Get-NetTCPConnection - displays current TCP connections
+- Get-FileHash -Path .\ship-flag.txt - gets file hash
+- Get-Item -Path "C:\House\house_log.txt" -Stream * - info about file
+- Invoke-Command - runs commands on computers or servers
+- Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service } - remote commands
+
+
 
