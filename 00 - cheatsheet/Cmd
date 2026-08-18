@@ -67,6 +67,13 @@ PowerShell commands:
 - Get-FileHash -Path .\ship-flag.txt - gets file hash
 - Get-Item -Path "C:\House\house_log.txt" -Stream * - info about file
 - Invoke-Command - runs commands on computers or servers
+
+Linux commands:
+- pwd - actual directory
+- cd - change directory
+- ls - list subdirectories
+- cat <file> - show content of a file
+- grep <looking for> <file> - look for specified word
 - Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service } - remote commands
 
 
