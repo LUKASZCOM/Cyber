@@ -67,6 +67,7 @@ PowerShell commands:
 - Get-FileHash -Path .\ship-flag.txt - gets file hash
 - Get-Item -Path "C:\House\house_log.txt" -Stream * - info about file
 - Invoke-Command - runs commands on computers or servers
+- Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service } - remote commands
 
 Linux commands:
 - pwd - actual directory
@@ -74,7 +75,19 @@ Linux commands:
 - ls - list subdirectories
 - cat <file> - show content of a file
 - grep <looking for> <file> - look for specified word
-- Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service } - remote commands
+- echo $SHELL - check what shell are you using
+- cat /etc/shells - list of all available shells
+- zsh - change to zsh shell
+- chsh -s /usr/bin/zsh - change the default shell
+- #!/bin/bash - beggining of the script
+- chmod +x first_script.sh - execution permission to script
+- ./first_script.sh - running a script
+- nano <script_name> - creating a script
+- for i in {1..10};
+  do
+  echo $i
+  done   - loop script
+
 
 
 
