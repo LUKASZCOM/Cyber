@@ -1,9 +1,46 @@
 TABLE:
 Layer Number	Layer Name	Main Function	Example Protocols and Standards
-Layer 7	Application layer	Providing services and interfaces to applications	HTTP, FTP, DNS, POP3, SMTP, IMAP
-Layer 6	Presentation layer	Data encoding, encryption, and compression	Unicode, MIME, JPEG, PNG, MPEG
-Layer 5	Session layer	Establishing, maintaining, and synchronising sessions	NFS, RPC
-Layer 4	Transport layer	End-to-end communication and data segmentation	UDP, TCP
-Layer 3	Network layer	Logical addressing and routing between networks	IP, ICMP, IPSec
-Layer 2	Data link layer	Reliable data transfer between adjacent nodes	Ethernet (802.3), WiFi (802.11)
-Layer 1	Physical layer	Physical data transmission media	Electrical, optical, and wireless signals
+Layer 7	Application layer	Providing services and interfaces to applications	HTTP, FTP, DNS, POP3, SMTP, IMAP       - app given to user
+Layer 6	Presentation layer	Data encoding, encryption, and compression	Unicode, MIME, JPEG, PNG, MPEG             - data understandable by application
+Layer 5	Session layer	Establishing, maintaining, and synchronising sessions	NFS, RPC                               - maintain a connection with different applications
+Layer 4	Transport layer	End-to-end communication and data segmentation	UDP, TCP                                   - medium to connect site to server
+Layer 3	Network layer	Logical addressing and routing between networks	IP, ICMP, IPSec                              - connection in many nets
+Layer 2	Data link layer	Reliable data transfer between adjacent nodes	Ethernet (802.3), WiFi (802.11)              - connection in one net
+Layer 1	Physical layer	Physical data transmission media	Electrical, optical, and wireless signals                - cables
+
+
+TCP/IP
+TABLE:
+Layer Number	ISO OSI Model	TCP/IP Model (RFC 1122)	Protocols
+7	Application Layer	Application Layer	HTTP, HTTPS, FTP, POP3, SMTP, IMAP, Telnet, SSH,
+6	Presentation Layer
+5	Session Layer
+4	Transport Layer	Transport Layer	TCP, UDP
+3	Network Layer	Internet Layer	IP, ICMP, IPSec
+2	Data Link Layer	Link Layer	Ethernet 802.3, WiFi 802.11
+1	Physical Layer		
+
+Application Layer: The OSI model application, presentation and session layers, i.e., layers 5, 6, and 7, are grouped into the application layer in the TCP/IP model.
+Transport Layer: This is layer 4.
+Internet Layer: This is layer 3. The OSI model’s network layer is called the Internet layer in the TCP/IP model.
+Link Layer: This is layer 2.
+
+IP:
+192.168.1.0 <- network address
+192.168.1.255 <- broadcast address
+
+Private IP addresses:
+10.0.0.0 - 10.255.255.255 (10/8)
+172.16.0.0 - 172.31.255.255 (172.16/12)
+192.168.0.0 - 192.168.255.255 (192.168/16)
+
+UDP - makes a process on direct host
+TCP - communication with confirmation
+SYN Packet: The client initiates the connection by sending a SYN packet to the server. This packet contains the client’s randomly chosen initial sequence number.
+SYN-ACK Packet: The server responds to the SYN packet with a SYN-ACK packet, which adds the initial sequence number randomly chosen by the server.
+ACK Packet: The three-way handshake is completed as the client sends an ACK packet to acknowledge the reception of the SYN-ACK packet.
+
+telnet - connect to any port listening on TCP
+telnet <IP> 80
+GET / HTTP/1.1
+Host: ... - WIFI port
