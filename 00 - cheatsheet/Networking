@@ -44,3 +44,14 @@ telnet - connect to any port listening on TCP
 telnet <IP> 80
 GET / HTTP/1.1
 Host: ... - WIFI port
+--------------------------
+DHCP - dynamic host configuration protocol
+DHCP Discover: The client broadcasts a DHCPDISCOVER message seeking the local DHCP server if one exists.
+DHCP Offer: The server responds with a DHCPOFFER message with an IP address available for the client to accept.
+DHCP Request: The client responds with a DHCPREQUEST message to indicate that it has accepted the offered IP.
+DHCP Acknowledge: The server responds with a DHCPACK message to confirm that the offered IP address is now assigned to this client.
+
+ping 192.168.11.1 -c 4- send packages check for connection, end after sending 4 packages
+traceroute <site> - the whole connection process to a site
+
+
